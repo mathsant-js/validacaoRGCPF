@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário - Bootstrap && JavaScript</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="bg-secondary-subtle">
+    <div class="container text-center bg-white">
+      <div class="row bg-primary">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+              <a
+                class="navbar-brand active link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                href="#"
+                >Formulário de Cadastro</a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                      aria-current="page"
+                      href="#"
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                      href="#"
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                      href="#"
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"
+                      >Matheus Santana</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">&nbsp;</div>
+      </div>
+      <form action="dados()">
+        <div class="row">
+          <div class="col text-start">
+            <div class="mb-3">
+              <label for="txtNome" class="form-label">Nome:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nome"
+                aria-describedby="nome"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="txtEndereco" class="form-label">Endereço:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="endereco"
+                aria-describedby="endereco"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="txtCPF" class="form-label">CPF:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="CPF"
+                aria-describedby="CPF"
+                maxlength="14"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="txtRG" class="form-label">RG:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="RG"
+                aria-describedby="RG"
+                maxlength="12"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="txtBairro" class="form-label">Bairro:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="bairro"
+                aria-describedby="bairro"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="txtCEP" class="form-label">CEP:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="CEP"
+                aria-describedby="CEP"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="txtCidade" class="form-label">Cidade:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cidade"
+                aria-describedby="cidade"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="txtEstado" class="form-label">Estado:</label>
+              <select class="form-select" aria-label="Estado">
+                <option selected>Selecione um estado:</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <input
+                type="button"
+                onClick="dados()"
+                class="btn btn-primary"
+                value="Cadastrar"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script>
+      function dados() {
+        if (document.getElementById("CPF").value.length != 14) {
+          alert("CPF foi digitado incorretamente");
+        }
+        if (document.getElementById("RG").value.length != 12){
+            alert("RG foi digitado incorretamente");
+        }
+      }
+    </script>
+  </body>
+</html>
